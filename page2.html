@@ -1,0 +1,71 @@
+<html>
+<head>
+    <link rel="icon" type="image/png" href="tabicon.png">
+<title>watermelon studies</title>
+<style>
+ 
+    
+       
+.square{
+    background-color: rgb(164, 253, 146);
+    position: absolute;
+    top: 0px;
+    width: 4000px; 
+    height: 100px;
+    right: 0px;
+    border-radius: 10px;  
+}
+ body{
+        background-color: rgb(253, 124, 107);
+        font-family: 'Brush Script MT', cursive;  
+    }
+    .arrowsL:hover{
+        transform: scale(1.1);
+    }
+    .arrowsL{
+    width: 50px;
+    height: 50px;
+    background-image: url(left-arrow.png);
+    background-size: cover;
+    position: absolute;
+    left: 46%;
+    top: 40px;
+    outline-color: rgb(255, 235, 179);
+    transition: 0.4s; 
+    cursor: pointer;
+}
+
+#games{
+position: absolute;
+
+padding: auto;
+   margin-top: 100px; 
+   
+   height: 913px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+</style>
+</head>
+<body>
+ <div class="square"></div>    
+ <h1 style="position: absolute;left: 50%;top: 30px;color: rgb(0, 0, 0);">Page 2</h1>
+ <a href="index.html"><button class="arrowsR"></button></a>
+ 
+ <a href="index.html">
+    <button class="arrowsL"></button>
+</a>
+<div id="games"></div>
+
+<script src="https://cdn.jsdelivr.net/gh/luminsdk/script@latest/lumin.min.js"></script>
+<script>
+  Lumin.init({
+    container: '#games',
+    theme: 'light'
+  });
+</script>
+
+
+</body>
+</html>
